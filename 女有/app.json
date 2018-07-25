@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",    
+    "pages/find/find",
+    "pages/my/my",
+    "pages/logs/logs"
+  ],
+    "tabBar": {
+      "borderStyle": "white",
+      "color": "#a9b7b7",
+      "selectedColor": "#f3715c",
+      "list": [
+        {
+          "pagePath": "pages/find/find",
+          "text": "女有",
+          "iconPath": "/images/nvyou.png",
+          "selectedIconPath": "/images/nvyou.png"
+        },
+        {
+          "pagePath": "pages/my/my",
+          "text": "我的",
+          "iconPath": "/images/my.png",
+          "selectedIconPath": "/images/my.png"
+        }
+      ]
+    },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
