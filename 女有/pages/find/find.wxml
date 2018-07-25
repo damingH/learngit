@@ -1,0 +1,51 @@
+<!--find.wxml-->
+<view class="find-container">
+  <!-- 圆形进度条  -->
+  <view class="container">
+    <view class='progress_box'>
+      <canvas class="canvasProgressBg" canvas-id="canvasProgressBg"> </canvas>
+      <canvas class="progress_canvas" canvas-id="canvasProgress"> </canvas>
+      <view class="progress_text">
+        <text>时\t\t\t\t\t\t分</text>
+        <view class="progress_dot">{{time}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!--  时间  -->
+  <view class="section">
+    <!-- <view class="section__title">时间选择器</view> -->
+    <picker mode="time" value="{{time}}" disabled="{{disabled}}" bindchange="bindTimeChange">
+      <view class="picker">
+        开始
+      </view>
+    </picker>
+  </view>
+
+  <!-- 力度  -->
+  <view class="section_gap">
+    <view class="section_view">
+      <image src="/images/shugang.png" class="section_iamge"></image>
+      <text class="section_title">当前力度:Lv{{sliderValue}}</text>
+    </view>
+    <view class="body-view">
+      <slider bindchange="slider1change" activeColor='#fab27b' block-color="#f3715c" block-size="16" max="10" step="1" backgroundColor="grey"  value="{{sliderValue}}" disabled="{{sliderDisabled}}" />
+    </view>
+  </view>
+
+  <!-- 模式  -->
+  <view class="src">
+    <view class="src_view">
+      <image src="/images/shugang.png" class="src_iamge"></image>
+      <text class="src_title">模式</text>
+    </view>
+    <view class="src_mode">
+      <view class="mode">
+        <image class="rub" src="{{rub?'/images/rub-bling.png':'/images/rub.png'}}" catchtap="onRubTap"></image>
+      </view>
+      <view class="mode">
+        <image class="fight" src="{{fight?'/images/fight-bling.png':'/images/fight.png'}}" catchtap="onFightTap"></image>
+      </view>
+    </view>
+  </view>
+</view>

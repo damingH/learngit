@@ -1,0 +1,182 @@
+/* .find-container{
+  display: flex;
+  flex-direction:column;
+}
+
+.container{
+  -webkit-flex: 3;
+  flex:3;
+} */
+
+.progress_box {
+  /* position: relative; */
+  width: 220px;
+  height: 220px;
+  /*  这里的宽高是必须大于等于canvas圆环的直径 否则绘制到盒子外面就看不见了
+ 一开始设置 width:440rpx; height:440rpx; 发现 在360X640分辨率的设备，下绘制的圆环跑盒子外去了
+ 小程序使用rpx单位适配 ，但是canvas绘制的是px单位的。所以只能用px单位绘制的圆环在盒子内显示 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:blanchedalmond;
+}
+
+.canvasProgressBg {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+}
+
+.progress_canvas {
+  width: 220px;
+  height: 220px;
+  z-index:1;
+}
+
+.progress_text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column; 
+  top:100rpx;
+  font-size:40rpx;
+  color:#f3715c;
+}
+
+.progress_info {
+  font-size: 36rpx;
+  padding-left: 16rpx;
+  letter-spacing: 2rpx;
+}
+
+.progress_dot {
+  display:flex;
+  flex-direction:column; 
+  align-items:center;
+  font-size:80rpx;
+  color:#f3715c;
+}
+
+.section{
+  display:flex;
+  flex-direction:column; 
+  align-items:center;
+  /* flex:2;
+  -webkit-flex: 2; */
+}
+
+.picker{
+  width:180rpx;
+  height:80rpx;
+  line-height:80rpx;
+  text-align:center;
+  background:#f3715c;
+  border:1rpx solid #f3715c;
+  border-radius: 5vw;
+  margin:30rpx;
+  color:#fff;
+  font-size:40rpx;
+}
+
+.section_gap{
+  display:flex;
+  flex-direction:column;  
+  /* align-items:center; */
+  margin-top:20rpx;
+}
+
+.section_view{
+  display:flex;
+  flex-direction:row; 
+  float:left;
+  width:100%;
+  height:50rpx;
+  margin-left:30rpx;
+}
+
+.section_iamge{
+   width:12rpx;
+   height:51rpx;  
+   float:left;
+}
+
+.section_title{
+  margin-left:10rpx;
+}
+
+.body-view{
+  width:100%;
+  height:100rpx;
+  /* margin-top:30rpx; */
+  /* background:#fff; */
+  /* display:flex;
+  flex-direction:column; */
+}
+
+
+.slider_iamge{
+  width:100rpx;
+  height:100rpx;
+  margin-top:30rpx;
+  margin-left:30rpx;
+}
+
+.src{
+  width:100%;
+  height:100%;
+  /* flex:2;
+  -webkit-flex: 2; */
+  display:flex;
+  flex-direction:column; 
+  align-items:center; 
+  justify-content: center;
+  margin-left:20rpx;
+}
+
+.src_view{
+  /* flex:1;  */
+  display:flex;
+  flex-direction:row; 
+  float:left;
+  width:100%;
+  height:50rpx;
+  margin-left:30rpx;
+}
+
+.src_iamge{
+   width:12rpx;
+   height:51rpx;  
+   float:left;
+}
+
+.src_title{
+  margin-left:10rpx;
+}
+
+.src_mode{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items:center;
+  /* margin-top:50rpx; */
+}
+/* 
+.mode{
+  flex:1;
+} */
+
+.rub{
+  width:100rpx;
+  height:100rpx;
+  margin-right:120rpx;
+}
+
+.fight{
+  width:100rpx;
+  height:100rpx;
+  margin-left:120rpx;
+}
+
